@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenMind - Plant Shop</title>
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.svg" alt="GreenMind Logo">
+        </div>
+    
+        <nav class="nav">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    
+        <div class="icons">
+            <a href="#"><img src="images/cart-icon.svg" alt="Cart"></a>
+            <a href="#"><img src="images/user-icon.svg" alt="User"></a>
+            <span class="divider"></span>
+            <a href="#" class="menu-icon"><img src="images/filter-icon.svg" alt="Menu"></a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1>Buy your <span>dream plants</span></h1>
+                <div class="hero__stats">
+                    <p><strong>50+</strong> <br> Plant Species</p>
+                    <span class="divider"></span>
+                    <p><strong>100+</strong> <br> Customers</p>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="What are you looking for?">
+                    <button><img src="images/search-icon.svg" alt="Search"></button>
+                </div>
+            </div>
+    
+            <div class="hero__image">
+                <!-- Desktop Image with Retina Support -->
+                <img 
+                    src="images/desktop-plant.png" 
+                    srcset="images/desktop-plant.png 1x, images/desktop-plant@2x.png 2x" 
+                    alt="Plant" 
+                    class="desktop-image">
+                
+                <!-- Mobile Image with Retina Support -->
+                <img 
+                    src="images/mobile-plant.png" 
+                    srcset="images/mobile-plant.png 1x, images/mobile-plant@2x.png 2x" 
+                    alt="Plant" 
+                    class="mobile-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="best-selling">
+        <div class="best-selling__container">
+            <div class="best-selling__content">
+                <h2>Best Selling Plants</h2>
+                <p>Easiest way to healthy life by buying your favorite plants</p>
+                <a href="#" class="btn">See more →</a>
+            </div>
+    
+            <div class="best-selling__grid">
+                <div class="plant-card">
+                    <a href="#">
+                        <img src="images/plant-img1.png" 
+                         srcset="images/plant-img1.png 1x, images/plant-img1@2x.png 2x" 
+                         alt="Natural Plants">
+                    </a>
+                    <h3><a href="#">Natural Plants</a></h3>
+                    <p>₱ 1,400.00</p>
+                </div>
+    
+                <div class="plant-card">
+                    <a href="#">
+                        <img src="images/plant-img2.png" 
+                        srcset="images/plant-img2.png 1x, images/plant-img2@2x.png 2x" 
+                        alt="Artificial Plants">
+                    </a>
+                    <h3><a href="#">Artificial Plants</a></h3>
+                    <p>₱ 900.00</p>
+                </div>
+    
+                <div class="plant-card">
+                    <a href="#">
+                        <img src="images/plant-img3.png" 
+                         srcset="images/plant-img3.png 1x, images/plant-img3@2x.png 2x" 
+                         alt="Artificial Plants">
+                    </a>
+                    <h3><a href="#">Artificial Plants</a></h3>
+                    <p>₱ 3,500.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section class="about-us">
+        <h2>About us</h2>
+        <p>Order now and appreciate the beauty of nature</p>
+      
+        <div class="about-container">
+          <div class="about-item">
+            <div class="about-icon">
+              <img src="images/about-icon1.svg" alt="Large Assortment">
+            </div>
+            <h3>Large Assortment</h3>
+            <p>We offer many different types of products with fewer variations in each category.</p>
+          </div>
+      
+          <div class="about-item">
+            <div class="about-icon">
+              <img src="images/about-icon2.svg" alt="Fast & Free Shipping">
+            </div>
+            <h3>Fast & Free Shipping</h3>
+            <p>4-day or less delivery time, free shipping and an expedited delivery option.</p>
+          </div>
+      
+          <div class="about-item">
+            <div class="about-icon">
+              <img src="images/about-icon3.svg" alt="24/7 Support">
+            </div>
+            <h3>24/7 Support</h3>
+            <p>Answers to any business-related inquiry 24/7 and in real-time.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories">
+        <h2>Categories</h2>
+        <p>Find what you are looking for</p>
+      
+        <div class="categories-container">
+          <div class="category-item">
+            <img src="images/natural-plants.png" 
+                 srcset="images/natural-plants@2x.png 2x" 
+                 alt="Natural Plants">
+            <h3>Natural Plants</h3>
+          </div>
+      
+          <!-- Separate section for "Plant Accessories" -->
+          <div class="category-item featured">
+            <img src="images/plant-accessories.png" 
+                 srcset="images/plant-accessories@2x.png 2x" 
+                 alt="Plant Accessories">
+            <h3>Plant Accessories</h3>            
+          </div>
+      
+          <div class="category-item">
+            <img src="images/artificial-plants.png" 
+                 srcset="images/artificial-plants@2x.png 2x" 
+                 alt="Artificial Plants">
+            <h3>Artificial Plants</h3>
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a href="#" class="explore-btn">Explore →</a>
+      </section>
+      
+      
+
+      <section class="testimonials">
+        <h2>What customers say about <br> <span>GREEMIND?</span></h2>
+      
+        <div class="testimonial-slider">
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <p>
+                Jorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+                per inceptos himenaeos.
+              </p>
+              <div class="testimonial-footer">
+                <img src="images/user1.png" srcset="images/user1@2x.png 2x" alt="John Doe">
+                <div>
+                  <strong>John Doe</strong>
+                  <span>Youtuber</span>
+                </div>
+                <span class="rating">⭐ 4.5</span>
+              </div>
+            </div>
+          </div>
+      
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <p>
+                Jorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+                per inceptos himenaeos.
+              </p>
+              <div class="testimonial-footer">
+                <img src="images/user2.png" srcset="images/user2@2x.png 2x" alt="John Doe">
+                <div>
+                  <strong>John Doe</strong>
+                  <span>Youtuber</span>
+                </div>
+                <span class="rating">⭐ 4.5</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__brand">
+              <div class="footer__logo">
+                <img src="images/logo.svg" alt="GreenMind Logo">
+              </div>
+              <p class="footer__text">We help you find your dream plant</p>
+              <div class="footer__social">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+      
+            <div class="footer__links">
+              <div class="footer__column">
+                <h4 class="footer__title">Information</h4>
+                <ul>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Product</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
+              <div class="footer__column">
+                <h4 class="footer__title">Company</h4>
+                <ul>
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Career</a></li>
+                  <li><a href="#">Our Story</a></li>
+                </ul>
+              </div>
+              <div class="footer__column">
+                <h4 class="footer__title">Contact</h4>
+                <ul>
+                  <li><a href="#">Getting Started</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Resources</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      
+          <div class="footer__bottom">
+            <p>2023 All Rights Reserved. Terms of use GREENMIND</p>
+          </div>
+        </div>
+      </footer>
+      
+
+
+    <!-- jQuery (required for Slick) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.testimonial-slider').slick({
+            slidesToShow: 2, // Show 2 slides on desktop
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            dots: true,
+            arrows: false,
+            adaptiveHeight: true,
+            responsive: [
+            {
+                breakpoint: 768, // For screens smaller than 768px
+                settings: {
+                slidesToShow: 1, // Show only 1 slide on mobile
+                }
+            }
+            ]
+        });
+    });
+
+
+</script>
+
+</body>
+</html>
+

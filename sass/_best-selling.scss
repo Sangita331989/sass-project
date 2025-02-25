@@ -1,0 +1,112 @@
+.best-selling {
+    width: 100%;
+    padding: 60px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .best-selling__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .best-selling__content {
+        max-width: 300px;
+        text-align: left;
+
+        h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 16px;
+            color: black;
+            background: #d1e7e0;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            
+            &:hover {
+                background: #b5d3c7;
+            }
+        }
+    }
+
+    .best-selling__grid {
+        display: flex;
+        gap: 20px;
+    }
+
+    .plant-card {
+        background: white;
+        padding: 15px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        img {
+            width: 100%;
+            max-width: 220px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 10px;
+            color: #444;
+            a {
+                color: #444; 
+                text-decoration: none;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            color: #444;
+            margin-top: 5px;
+        }
+    }
+}
+
+// ✅ Mobile Responsive
+@media (max-width: 768px) {
+    .best-selling {
+        padding: 40px 5%;
+        flex-direction: column;
+    }
+
+    .best-selling__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .best-selling__grid {
+        flex-direction: column;
+        align-items: center;
+    
+        .plant-card img {
+            max-width: 100%;
+        }
+    }
+}

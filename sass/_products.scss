@@ -1,0 +1,27 @@
+.products {
+    padding: 2rem;
+    
+    .product-list {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        .product {
+            background: #333;
+            padding: 1rem;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            img {
+                width: 150px;
+                height: auto;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,85 @@
+ // Colors
+$primary-bg: #d7e9e9;
+$text-color: #666;
+$heading-color: #000;
+$sub-text-color: #777;
+
+// Base Styles
+.about-us {
+  text-align: center;
+  padding: 60px 20px;
+
+  h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: $heading-color;
+  }
+
+  p {
+    font-size: 16px;
+    color: $text-color;
+    margin-bottom: 40px;
+  }
+
+  // Container
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    .about-item {
+      flex: 1;
+      min-width: calc(33.33% - 20px);
+      max-width: calc(33.33% - 20px);
+      text-align: center;
+
+      .about-icon {
+        width: 70px;
+        height: 70px;
+        background-color: $primary-bg;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 15px;
+
+        img {
+          width: 32px;
+          height: 24px;
+        }
+      }
+
+      h3 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: $heading-color;
+      }
+
+      p {
+        font-size: 14px;
+        color: $sub-text-color;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  // Responsive
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      .about-item {
+        min-width: 100%;
+        max-width: 100%;
+      }
+    }
+    
+  }
+}
+

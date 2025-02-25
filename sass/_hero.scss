@@ -1,0 +1,134 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px; // Adjust as needed    
+    border-radius: 20px;
+    overflow: hidden;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    .hero__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .hero__content {
+        position: absolute;
+        left: 10%;
+        max-width: 40%;
+        z-index: 2;
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.2;
+            span {
+                color: black;
+            }
+        }
+
+        .hero__stats {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 20px;
+            
+            p {
+                font-size: 18px;
+                color: #444;
+            }
+            
+            .divider {
+                width: 1px;
+                height: 30px;
+                background: #888;
+            }
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+            input {
+                border: none;
+                outline: none;
+                flex: 1;
+                padding: 10px;
+                font-size: 16px;
+                color: #444;
+            }
+
+            button {
+                background: transparent;
+                border: none;
+                cursor: pointer;
+
+                img {
+                    width: 45px;
+                }
+            }
+        }
+    }
+
+    .hero__image {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .mobile-image {
+            display: none;
+        }
+    }
+}
+
+// ✅ Mobile Version
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+        background: #d1e7e0;
+        border-radius: 0;
+
+        .hero__container {
+            flex-direction: column;
+        }
+
+        .hero__content {
+            position: static;
+            max-width: 100%;
+        }
+
+        .hero__image {
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .desktop-image {
+                display: none;
+            }
+
+            .mobile-image {
+                display: block;
+                width: 80%;
+            }
+        }
+    }
+}
